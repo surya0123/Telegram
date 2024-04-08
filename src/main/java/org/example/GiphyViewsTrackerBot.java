@@ -27,7 +27,7 @@ public class GiphyViewsTrackerBot {
         String totalViews = viewsElement.getText();
         System.out.println(totalViews);
 
-        //driver.quit();
+        driver.quit();
 
 
         sendTelegramMessage(telegramBotToken, chatId, "Daily Giphy Views Update:Total Views: " + totalViews);
