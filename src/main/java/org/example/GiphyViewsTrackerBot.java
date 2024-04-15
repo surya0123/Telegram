@@ -1,5 +1,6 @@
 package org.example;
 
+import org.jetbrains.annotations.TestOnly;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,6 +10,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+@TestOnly
 public class GiphyViewsTrackerBot {
     public static void main(String[] args) {
 
@@ -25,7 +27,7 @@ public class GiphyViewsTrackerBot {
         WebElement viewsElement = driver.findElement(By.xpath("//div[@ class=\"ViewCountContainer-sc-15ri43l hCQudc ss-view\"]"));
 
         String totalViews = viewsElement.getText();
-        System.out.println(totalViews);
+        System.out.println("Daily Giphy views Update:" + totalViews);
 
         driver.quit();
 
