@@ -21,7 +21,7 @@ public class Giphy2 {
 
         String gifId = "chzz1FQgqhytWRWbp3";
 
-        String giphyApiKey = "7JX42YkuBt7DGHaZExDDxKZDnHzN84H4"; // Replace with your actual Giphy API key
+        String giphyApiKey = "7JX42YkuBt7DGHaZExDDxKZDnHzN84H4";
         String telegramBotToken = "6768561787:AAH7oNzeB4DEPqclN91HPnf2nJlwOCvHwa8";
         String chatId = "5930317471";
 
